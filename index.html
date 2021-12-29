@@ -1,0 +1,120 @@
+<!doctype html>
+<head>
+  <title>RatioTool.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="resources/screen.css" media="screen">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="shortcut icon" href="resources/favicon.png">
+
+  <script src="https://use.typekit.net/pow3xvy.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111335871-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111335871-1');
+  </script>
+
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+<aside class="side-menu">
+  <div>
+    <svg version="1.1" class="close-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+      <line fill="none" stroke-width="5" stroke-miterlimit="10" x1="2" y1="26" x2="26" y2="2"/>
+      <line fill="none" stroke-width="5" stroke-miterlimit="10" x1="2" y1="2" x2="26" y2="26"/>
+    </svg>
+
+    <div class="help-content">
+      <h2>Help</h2>
+
+      <h3>What is this?</h3>
+      <p>
+        This ratio calculator helps you solve an incomplete ratio equasion where
+        one or two values are missing. Use it to scale a ratio up or down, find a 
+        ratio's lowest terms or test if two ratios are equivalent.
+      </p>
+      
+      <h3>Usage</h3>
+      <p>
+        Plug in your known values and hit the "Solve for missing value(s)" button
+        to calculate the missing values. You must begin with at least both values
+        in the left fraction filled out.
+      </p>
+
+      <h4>Starting with 2 values</h4>
+      <p>Starting with two values will automatically populate the right fraction
+      with an equivalent fraction, as expressed in lowest terms. The lowest terms
+      are always displayed below the main controls as well.</p>
+
+      <h4>Starting with 3 values</h4>
+      <p>Starting with three values lets you find the remaining missing value to make
+        your ratios equivalent.</p>
+
+      <h4>Starting with 4 values</h4>
+      <p>Starting with all four values included is a handy way to test a complete ratio
+        for equivalency. Equivalency is always shown below the main controls regardless
+        of how many values you begin with.</p>
+    </div>
+  </div>
+</aside>
+
+<div class="sidebar">
+  <img class="logo" src="resources/logo.svg" alt="Ratio Tool" />
+  <div class="menu-launcher">Help?</div>
+</div>
+
+<div class="controls">
+  <p class="intro">Use this tool to solve an incomplete ratio equasion. Scale a ratio, find a ratio's lowest terms or test if two ratios are equivalent.</p>
+
+  <div class="inner">
+    <form>
+      <div class="left">
+        <input class="numerator" type="number">
+        <hr>
+        <input class="denominator" type="number">
+      </div>
+
+      <div class="separator">=</div>
+
+      <div class="right">
+        <input class="numerator" type="number">
+        <hr>
+        <input class="denominator" type="number">
+      </div>
+
+      <div class="calculate-button-container">
+        <input id="calculate" type="button" value="Solve for missing value(s)">
+      </div>
+
+      <div class="clear-button disabled">Clear Form</div>
+    </form>
+    <div class="results-container">
+      <h3>Results</h3>
+      <div class="results">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="http://www.bmarshall.ca/" title="Made by Brad Marshall">
+    <div class="label">
+      <span class="top">Made by</span>
+      <br>
+      <span class="bottom">This guy</span>
+    </div>
+    <div class="avatar"></div>
+  </a>
+</footer>
+
+</body>
+</html>
